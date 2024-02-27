@@ -1,0 +1,211 @@
+.hero{
+	background: url(../images/header-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: soft-light;
+}
+.feature{
+	display: block !important;
+}
+.bg-gray {
+    position: relative;
+    width: 100%;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 3px 20px rgb(0 0 0 / 8%);
+    background: #fff;
+}
+
+/* Team Section
+--------------------------------*/
+.team .slick-track{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;  
+}
+.team .card{
+  height: 100%;  
+}
+.team .card-body{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  padding: 1rem;
+}
+.team .slick-slide {
+  height: inherit !important;
+}
+.team .slick-arrow {
+    position: absolute;
+    border: none;
+    width: 36px;
+    height: 36px;
+    border-radius: 36px;
+    padding: 0;
+    top: calc(50% - 36px);
+    z-index: 2;
+}
+.slick-prev{
+    left: -18px;
+}
+.slick-next{
+    right: -18px;
+}
+
+
+
+/* About Us Section
+--------------------------------*/
+#about {
+  padding: 80px 0;
+}
+#about .about-content {
+  padding-top: 40px;
+}
+#about .about-content h2 {
+  font-weight: 700;
+}
+#about .about-content h3 {
+  font-weight: 400;
+  font-size: 22px;
+  font-style: italic;
+}
+#about .about-content ul {
+  list-style: none;
+  padding: 0;
+}
+#about .about-content ul li {
+  padding-bottom: 10px;
+}
+#about .about-content ul li i {
+  font-size: 20px;
+  padding-right: 4px;
+  color: #1bb1dc;
+}
+#about .about-img {
+  position: relative;
+  margin: 30px 30px 30px 30px;
+}
+#about .about-img img {
+  width: 100%;
+  border: 8px solid #fff;
+  transition: 0.5s;
+}
+#about .about-img img:hover {
+  width: 100%;
+  transform: scale(1.03);
+}
+#about .about-img::before {
+  position: absolute;
+  left: -31px;
+  top: -30px;
+  width: 90%;
+  height: 92%;
+  z-index: -1;
+  content: "";
+  background-color: #ebf1fa;
+  transition: 0.5s;
+}
+#about .about-img::after {
+  position: absolute;
+  right: -31px;
+  bottom: -30px;
+  width: 90%;
+  height: 92%;
+  z-index: -1;
+  content: "";
+  background-color: #ebf1fa;
+  transition: 0.5s;
+}
+
+/* Why Us Section
+--------------------------------*/
+#why-us {
+  padding: 60px 0;
+}
+@media (max-width: 991px) {
+    #why-us .why-us-content {
+        padding-top: 30px;
+    }
+}
+#why-us .why-us-img{
+  width: 100%;    
+}
+#why-us .why-us-content .features {
+  margin: 0 0 15px 0;
+  padding: 0;
+}
+#why-us .why-us-content .features i {
+  font-size: 36px;
+  float: left;
+}
+#why-us .why-us-content .features h4 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-left: 56px;
+  color: #413e66;
+  margin-bottom: 5px;
+}
+#why-us .why-us-content .features p {
+  font-size: 16px;
+  margin-left: 56px;
+  color: #555186;
+}
+#why-us .counters {
+  padding-top: 40px;
+}
+#why-us .counters span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+  display: block;
+  color: #555186;
+}
+#why-us .counters p {
+  padding: 0;
+  margin: 0 0 20px 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: #8a87b6;
+}
+
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: #1bb1dc;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  transition: all 0.4s;
+}
+.back-to-top i {
+  font-size: 28px;
+  color: #fff;
+  line-height: 0;
+}
+.back-to-top:hover {
+  background: #39c0e7;
+  color: #fff;
+}
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
